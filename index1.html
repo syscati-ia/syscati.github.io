@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SYSCATI->IA | Cursos Programación y Tecnología</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+        <style>
+            :root {
+                --primary-blue: #007bff;
+                --dark-blue: #002d5b;
+            }
+
+            body {
+                font-family: 'Poppins', sans-serif;
+                overflow-x: hidden;
+            }
+
+            /* Navbar moderna */
+            .navbar {
+                background: rgba(255,255,255,0.95);
+                shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+            .nav-link {
+                color: #333 !important;
+                font-weight: 500;
+            }
+
+            /* Hero Section */
+            .hero-section {
+                background: linear-gradient(135deg, #002d5b 0%, #007bff 100%);
+                color: white;
+                padding: 120px 0 60px;
+                clip-path: ellipse(150% 100% at 50% 0%);
+            }
+
+            /* Tarjetas de Precios */
+            .pricing-card {
+                border: none;
+                border-radius: 15px;
+                transition: transform 0.3s ease;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            }
+            .pricing-card:hover {
+                transform: translateY(-10px);
+            }
+
+            .btn-action {
+                border-radius: 50px;
+                padding: 10px 25px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            /* Footer */
+            .footer {
+                background: #1a1a1a;
+                color: white;
+                padding: 40px 0;
+            }
+
+            /* Ajuste para imágenes de iconos */
+            .services-icon i {
+                font-size: 3rem;
+                color: var(--primary-blue);
+            }
+        </style>
+        <style>
+            :root {
+                --primary-blue: #007bff;
+                --glass-bg: rgba(255, 255, 255, 0.15);
+                --glass-border: rgba(255, 255, 255, 0.2);
+            }
+
+            body {
+                font-family: 'Poppins', sans-serif;
+                background-color: #f4f7f9;
+                overflow-x: hidden;
+            }
+
+            /* --- CONTENEDOR DE VIDEO DE FONDO --- */
+            .video-hero {
+                position: relative;
+                height: 100vh;
+                width: 100%;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+            }
+
+            #bg-video {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                z-index: -2;
+                transform: translate(-50%, -50%);
+                object-fit: cover; /* Asegura que el video cubra todo el espacio */
+            }
+
+            /* Capa de superposición para que el texto sea legible */
+            .video-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 20, 50, 0.5); /* Tinte azul oscuro transparente */
+                z-index: -1;
+            }
+
+            /* --- ESTILO GLASSMORPHISM --- */
+            .glass-card {
+                background: rgba(255, 255, 255, 0.9);
+                backdrop-filter: blur(8px);
+                border: 1px solid var(--glass-border);
+                border-radius: 20px;
+                transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            }
+
+            .glass-card:hover {
+                transform: scale(1.05) translateY(-10px);
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            }
+
+            .btn-animated {
+                border-radius: 50px;
+                padding: 12px 35px;
+                font-weight: 600;
+                transition: all 0.3s ease;
+                text-transform: uppercase;
+            }
+
+            .btn-animated:hover {
+                letter-spacing: 1px;
+                transform: translateY(-3px);
+                box-shadow: 0 10px 20px rgba(0, 123, 255, 0.3);
+            }
+
+            /* Iconos con rotación */
+            .icon-circle {
+                width: 70px;
+                height: 70px;
+                background: var(--primary-blue);
+                color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.8rem;
+                margin: 0 auto 15px;
+                transition: 0.6s ease;
+            }
+
+            .glass-card:hover .icon-circle {
+                transform: rotateY(360deg);
+            }
+        </style>
+    </head>
+    <body>
+<section class="section-main" id="main">
+
+</section>
+        <nav class="navbar navbar-expand-lg fixed-top shadow-sm" id="main">
+            <div class="container" main>
+                <a class="navbar-brand fw-bold" href="#">SYSCATI->IA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#main">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Cursos TI</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#features">Comunidad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pricing">Promociones</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-3" href="#contact">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="video-hero">
+            <video autoplay muted loop playsinline id="bg-video">
+                <source src="videos/devices.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
+
+            <div class="video-overlay"></div>
+
+            <div class="container text-center">
+                <h1 class="display-1 fw-bold mb-3" data-aos="zoom-out" data-aos-duration="1200">SYSCATI->IA</h1>
+                <p class="lead fs-2 mb-5" data-aos="fade-up" data-aos-delay="400" style="color: #00b4d8; font-size: 1.8rem; font-weight: 300; transition: color 0.4s, opacity 0.4s;">
+                    Expertos en Cursos de Programación y Tecnología 
+                </p>
+				  <p class="lead mb-5">Cursos desde cero hasta experto. Realiza ejercicios y construye proyectos reales con <i>Learning velocity</i> .</p>
+                <div data-aos="fade-up" data-aos-delay="800">
+                    <a href="#cursos" class="btn btn-primary btn-lg btn-animated me-2">Ver Catálogo</a>
+                    <a href="#contacto" class="btn btn-outline-light btn-lg btn-animated">Contactar Becas</a>
+                </div>
+            </div>
+
+        </header>
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* CONFIGURACIÓN DE COLORES AZULES Y TRANSICIONES */
+        :root {
+            --azul-fuerte: #0044cc;
+            --azul-oscuro: #001f54;
+            --azul-electrico: #0077ff;
+            --azul-fondo: #f0f4f8;
+            --blanco: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--azul-fondo);
+        }
+
+        .section-metodologia {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8faff 0%, #e6eef8 100%);
+        }
+
+        /* TARJETAS PRINCIPALES (PILARES) */
+        .card-pilar {
+            background: var(--blanco);
+            border: none;
+            border-top: 5px solid var(--azul-fuerte);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 68, 204, 0.08);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .card-pilar:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 68, 204, 0.15);
+        }
+
+        .icon-pilar {
+            font-size: 2.5rem;
+            color: var(--azul-electrico);
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .card-pilar:hover .icon-pilar {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* DISEÑO DE PESTAÑAS (TABS) */
+        .nav-metodologia {
+            background: var(--blanco);
+            padding: 10px;
+            border-radius: 50px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            border: 1px solid #e1e8f0;
+        }
+
+        .nav-metodologia .nav-link {
+            color: var(--azul-oscuro);
+            font-weight: 600;
+            border-radius: 40px;
+            padding: 12px 25px;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .nav-metodologia .nav-link:hover {
+            background-color: rgba(0, 82, 204, 0.05);
+            color: var(--azul-fuerte);
+        }
+
+        .nav-metodologia .nav-link.active {
+            background-color: var(--azul-fuerte) !important;
+            color: var(--blanco) !important;
+            box-shadow: 0 4px 15px rgba(0, 68, 204, 0.3);
+        }
+
+        /* TARJETAS DE FACTORES DE ÉXITO */
+        .card-factor {
+            background: var(--blanco);
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 25px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .card-factor:hover {
+            border-color: var(--azul-electrico);
+            box-shadow: 0 8px 25px rgba(0, 119, 255, 0.1);
+            transform: translateY(-3px);
+        }
+
+        .badge-numero {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: rgba(0, 68, 204, 0.1);
+            color: var(--azul-fuerte);
+            font-weight: 700;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+        }
+
+        .icon-factor {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, rgba(0,82,204,0.1) 0%, rgba(0,119,255,0.1) 100%);
+            color: var(--azul-fuerte);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        /* ANIMACIONES DE ENTRADA (FADE IN UP) */
+        .tab-pane {
+            animation: fadeInUp 0.5s ease backwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+<!-----------------------------------------------------Metodologia Alto Rendimiento-------------------------------------------------->
+<section class="section-metodologia" id="services">
+    <div class="container">
+        
+        <div class="text-center mb-5">
+            <span class="badge bg-primary px-8 py-2 rounded-pill mb-1 text-uppercase tracking-wider"><h3>Metodología Innovadora Internacional</h3></span>
+			  <p class=""><i class="text-warning me-2"></i>Aprendizaje Basado en Proyectos (ABP) y Ciclos de Retroalimentación Rápida (Feedback Loops).</p>
+            <h2 class="display-5 fw-bold text-dark">Modalidad de Alto Rendimiento</h2>
+            <p class=""><i class="text-warning me-2"></i>CURSO ONLINE EN VIVO — Diseñado bajo 15 factores de éxito estructurales solo para ti para tus mejores aprendizajes y practicas.</p>
+			
+        </div>
+
+        <div class="row g-4 mb-5 justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <div class="card h-100 card-pilar p-4">
+                    <div class="card-body">
+                        <div class="icon-pilar"><i class="fa-solid fa-gauge-high"></i></div>
+                        <h4 class="card-title fw-bold text-dark">LEARNING VELOCITY</h4>
+                        <p class="card-text text-muted">
+                            Es la rapidez y eficiencia con la que adquieres, asimilas y aplicas nuevos conceptos técnicos, lenguajes o herramientas de manera práctica y **a tu propio ritmo**.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-5">
+                <div class="card h-100 card-pilar p-4">
+                    <div class="card-body">
+                        <div class="icon-pilar"><i class="fa-solid fa-arrows-spin"></i></div>
+                        <h4 class="card-title fw-bold text-dark">FEEDBACK LOOP</h4>
+                        <p class="card-text text-muted">
+                            Un ciclo de retroalimentación continuo que asegura que tus errores sean corregidos de inmediato en las sesiones en vivo con nuestros expertos, acelerando tu curva de aprendizaje real.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-4">
+		  <p class="">Estos son los 15 factores de exito solo para ti.</p>
+            <div class="col-12 col-lg-10">
+                <ul class="nav nav-pills nav-justified nav-metodologia" id="metodologiaTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="recursos-tab" data-bs-toggle="tab" data-bs-target="#recursos" type="button" role="tab"><i class="fa-solid fa-box-open me-2"></i>Recursos</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="dinamica-tab" data-bs-toggle="tab" data-bs-target="#dinamica" type="button" role="tab"><i class="fa-solid fa-chalkboard-user me-2"></i>Dinámica</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="enfoque-tab" data-bs-toggle="tab" data-bs-target="#enfoque" type="button" role="tab"><i class="fa-solid fa-graduationcap me-2"></i>Enfoque</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="comunidad-tab" data-bs-toggle="tab" data-bs-target="#comunidad" type="button" role="tab"><i class="fa-solid fa-users me-2"></i>Comunidad</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tab-content id="metodologiaTabsContent"">
+            
+            <div class="tab-pane fade show active" id="recursos" role="tabpanel">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card-factor">
+                            <span class="badge-numero">1</span>
+                            <div class="icon-factor"><i class="fa-solid fa-video"></i></div>
+                            <h5 class="fw-bold text-dark">Grabaciones</h5>
+                            <p class="small text-muted mb-0">Disponibles en cursos seleccionados para repaso asincrónico.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card-factor">
+                            <span class="badge-numero">2</span>
+                            <div class="icon-factor"><i class="fa-solid fa-music"></i></div>
+                            <h5 class="fw-bold text-dark">Música Terapia</h5>
+                            <p class="small text-muted mb-0">Sesiones estimulantes enfocadas en maximizar tu concentración (Focus).</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card-factor">
+                            <span class="badge-numero">3</span>
+                            <div class="icon-factor"><i class="fa-solid fa-lightbulb"></i></div>
+                            <h5 class="fw-bold text-dark">Buenas Prácticas</h5>
+                            <p class="small text-muted mb-0">Consejos, tips rápidos y píldoras en video de alta calidad técnica.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card-factor">
+                            <span class="badge-numero">4</span>
+                            <div class="icon-factor"><i class="fa-solid fa-book-bookmark"></i></div>
+                            <h5 class="fw-bold text-dark">Manuales y Apuntes</h5>
+                            <p class="small text-muted mb-0">Acceso a documentación y guías conceptuales previas a cada clase.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="dinamica" role="tabpanel">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-factor">
+                            <span class="badge-numero">5</span>
+                            <div class="icon-factor"><i class="fa-solid fa-code"></i></div>
+                            <h5 class="fw-bold text-dark">Prácticas en Vivo</h5>
+                            <p class="small text-muted mb-0">Resolución de código en tiempo real, consultas guiadas, aplicación de estándares y preparación a certificación.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-factor">
+                            <span class="badge-numero">6</span>
+                            <div class="icon-factor"><i class="fa-solid fa-comments"></i></div>
+                            <h5 class="fw-bold text-dark">Dudas y Retro en Vivo</h5>
+                            <p class="small text-muted mb-0">Feedback inmediato del instructor para corregir errores al instante.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="enfoque" role="tabpanel">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-factor">
+                            <span class="badge-numero">7</span>
+                            <div class="icon-factor"><i class="fa-solid fa-briefcase"></i></div>
+                            <h5 class="fw-bold text-dark">Casos Reales</h5>
+                            <p class="small text-muted mb-0">Desarrollo de aprendizajes orientados puramente a resolver habilidades en entornos laborales verdaderos.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-factor">
+                            <span class="badge-numero">8</span>
+                            <div class="icon-factor"><i class="fa-solid fa-folder-tree"></i></div>
+                            <h5 class="fw-bold text-dark">Auto Evaluación</h5>
+                            <p class="small text-muted mb-0">Control de tu progreso técnico mediante la construcción de tu propio repositorio final de código.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-factor">
+                            <span class="badge-numero">9</span>
+                            <div class="icon-factor"><i class="fa-solid fa-globe"></i></div>
+                            <h5 class="fw-bold text-dark">Estándar Internacional</h5>
+                            <p class="small text-muted mb-0">Código estructurado siguiendo estrictamente las normativas mundiales del ecosistema actual.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-factor">
+                            <span class="badge-numero">10</span>
+                            <div class="icon-factor"><i class="fa-solid fa-user-check"></i></div>
+                            <h5 class="fw-bold text-dark">Evaluación por Expertos</h5>
+                            <p class="small text-muted mb-0">Tus entregables son revisados por profesionales senior activos en la tecnología.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-factor">
+                            <span class="badge-numero">11</span>
+                            <div class="icon-factor"><i class="fa-solid fa-building-user"></i></div>
+                            <h5 class="fw-bold text-dark">Proyecto Empresarial Final</h5>
+                            <p class="small text-muted mb-0">Diseño y despliegue de una arquitectura completa con requerimientos corporativos reales.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-factor">
+                            <span class="badge-numero">12 </span>
+                            <div class="icon-factor"><i class="fa-solid fa-rotate-left"></i></div>
+                            <h5 class="fw-bold text-dark">Ejercicios de Repaso</h5>
+                            <p class="small text-muted mb-0">Retos modulares para afianzar la lógica de programación y solucionar dudas pendientes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="comunidad" role="tabpanel">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-factor">
+                            <span class="badge-numero">13</span>
+                            <div class="icon-factor"><i class="fa-solid fa-file-signature"></i></div>
+                            <h5 class="fw-bold text-dark">Valor Curricular</h5>
+                            <p class="small text-muted mb-0">Constancia formal de participación respaldada para potenciar tu perfil profesional y curriculum.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-factor">
+                            <span class="badge-numero">14</span>
+                            <div class="icon-factor"><i class="fa-solid fa-shield-halved"></i></div>
+                            <h5 class="fw-bold text-dark">Garantía de Aprendizaje</h5>
+                            <p class="small text-muted mb-0">Documento que avala y certifica de manera rigurosa las competencias que has adquirido.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-factor">
+                            <span class="badge-numero">15</span>
+                            <div class="icon-factor"><i class="fa-solid fa-square-poll-vertical"></i></div>
+                            <h5 class="fw-bold text-dark">Encuesta Final</h5>
+                            <p class="small text-muted mb-0">Mecanismo de control de calidad para optimizar constantemente la experiencia de tus habilidades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-----------------------------------------------------/Metodologia Alto Rendimiento-------------------------------------------------->
+
+<!---------------------------------------------------------------Cursos---------------------------------------------------------------->
+ <section class="py-5" id="services">
+            <div class="container py-5">
+			 
+                <div class="text-center mb-5" data-aos="fade-down">
+                    <h2 class="fw-bold display-8">Cursos de Vanguardia Tecnológica con "<i>Feedback Loop</i>" </h2>
+                    <div class="mx-auto mt-2 mb-4" style="width: 100px; height: 5px; background: var(--primary-blue); border-radius: 10px;"></div>
+                </div>
+
+                <div class="row g-4 text-center">
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="glass-card p-5 h-100">
+                            <div class="icon-circle"><i class="bi bi-code-slash"></i></div>
+                            <h3>Backend</h3>
+                            <p class="text-muted">Java, Lenguaje C, Python y PHP. Lógica de negocio avanzada para el mundo real.</p>
+							 <a href="#services" class="btn btn-primary w-100 btn-action">Ruta</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="glass-card p-5 h-100 border-primary shadow-sm">
+                            <div class="icon-circle"><i class="bi bi-display"></i></div>
+                            <h3>Frontend</h3>
+                            <p class="text-muted">HTML5, CSS3 y JavaScript. Crea interfaces modernas, rápidas y adaptables.</p>
+							 <a href="#services" class="btn btn-primary w-100 btn-action">Ruta</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="500">
+                        <div class="glass-card p-5 h-100">
+                            <div class="icon-circle"><i class="bi bi-phone"></i></div>
+                            <h3>Móviles</h3>
+                            <p class="text-muted">Desarrollo nativo. De novato a experto Fullstack móvil. Mejores tecnologias</p>
+							 <a href="#services" class="btn btn-primary w-100 btn-action">Ruta</a>
+                        </div>
+                    </div>
+					
+					 <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="glass-card p-5 h-100">
+                            <div class="icon-circle"><i class="bi bi-clock"></i></div>
+                            <h3>Seguridad TI</h3>
+                            <p class="text-muted">Etical hacking, redes seguras, seguridad personal avanzada, Criptografia</p>
+							 <a href="#services" class="btn btn-primary w-100 btn-action">Ruta</a>
+                        </div>
+                    </div>
+                </div>
+				<br><br>
+				 <div class="row g-4 text-center">
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="glass-card p-5 h-100">
+                            <div class="icon-circle"><i class="bi bi-search"></i></div>
+                            <h3>Bases de datos</h3>
+                            <p class="text-muted">Optimizacion, rendimeinto, normalizacion, bases de datos SQL y NOsql</p>
+							 <a href="#services" class="btn btn-primary w-100 btn-action">Ruta</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="glass-card p-5 h-100 border-primary shadow-sm">
+                            <div class="icon-circle"><i class="bi bi-gear"></i></div>
+                            <h3>Gestión Proyectos </h3>
+                            <p class="text-muted">Planes, Jira Software, Git, GitHub, Metodologias Agiles y clasicas, Estantares</p>
+							 <a href="#services" class="btn btn-primary w-100 btn-action">Ruta</a>
+                        </div>
+                    </div>
+						
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="500">
+                        <div class="glass-card p-5 h-100">
+                            <div class="icon-circle"><i class="bi bi-calendar"></i></div>
+                            <h3>Inteligencia Artificial</h3>
+                            <p class="text-muted">Inteligencia artificial generativa, Agentica, Buenas practicas, normatividades </p> 
+							 <a href="#services" class="btn btn-primary w-100 btn-action">Ruta</a>
+                        </div>
+                    </div>
+					
+					 <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="glass-card p-5 h-100">
+                            <div class="icon-circle"><i class="bi bi-bell"></i></div>
+                            <h3>Excel Empresarial</h3>
+                            <p class="text-muted">Desde cero hasta experto, funciones, graficos, dashboard, bases de datos</p>
+							 <a href="#services" class="btn btn-primary w-100 btn-action">Ruta</a>
+                        </div>
+                    </div>
+                </div>
+				
+            </div>
+        </section>
+<!-------------------------------------------------------------- Seccion Cursos---------------------------------------------------------------->
+
+
+<!----------------------------------------------------- Seccion  slider----------------------------------------------------------->
+        <section class="py-5" id="cursos">   
+    <style>
+    /* 1. ESCENA PRINCIPAL */
+    .parallax-scene {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background: radial-gradient(circle at center, #001d3d 0%, #000814 100%);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        perspective: 1000px; 
+    }
+
+    /* 2. CAPAS DE FONDO DINÁMICAS INDEPENDIENTES */
+    .bg-layer {
+        position: absolute;
+        width: 110%;
+        height: 110%;
+        top: -5%;
+        left: -5%;
+        background-size: cover;
+        background-position: center;
+        background-color: #0A3C6B; /* Tinte azul */
+        background-blend-mode: multiply; /* Filtro azul sobre la tecnología */
+        opacity: 0; /* Ocultas por defecto */
+        z-index: 1;
+        /* SE AGREGÓ: Transición de fondos más lenta (1.8s) */
+        transition: transform 1.8s ease-out, opacity 1.8s ease-in-out; 
+    }
+
+    /* Capa activa visible */
+    .bg-layer.active {
+        opacity: 50.5;
+    }
+
+    /* 3. CONTENEDOR DE TEXTO */
+    .info-panel {
+        position: absolute;
+        z-index: 4000;
+        padding-left: 10%;
+        width: 100%; 
+        pointer-events: none; 
+        transition: transform 0.5s cubic-bezier(0.1, 0.8, 0.2, 1); /* Parallax del mouse más suave */
+    }
+
+    .info-panel * { pointer-events: auto; }
+
+    .info-title {
+        font-size: clamp(2.5rem, 6vw, 5rem);
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+        color: #fff;
+        text-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        transition: transform 1.5s ease, opacity 1.5s ease;
+    }
+
+    /* 4. EL CÍRCULO - COMPACTO */
+    .carousel-wrapper {
+        position: fixed;
+        right: 5%;
+        width: 600px; 
+        height: 600px; 
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 2.5s cubic-bezier(0.1, 0.8, 0.2, 1);
+    }
+
+    .carousel-orbit {
+        position: relative;
+        width: 80%;
+        height: 80%;
+        border: 4px dashed rgba(0, 157, 255, 0.5); 
+        border-radius: 50%;
+        /* SE AGREGÓ: Giro de rueda principal ralentizado a 2.2 segundos para máxima suavidad */
+        transition: transform 5.2s cubic-bezier(0.15, 0.85, 0.15, 1), width 0.6s ease, height 0.6s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item-node {
+        position: absolute;
+        width: 80px; 
+        height: 80px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(0, 157, 255, 0.4);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        transition: background-color 0.6s ease, border-color 0.6s ease, box-shadow 0.6s ease;
+    }
+
+    .item-node.active-node {
+        background: rgba(0, 168, 255, 0.2);
+        border-color: #00a8ff;
+        box-shadow: 0 0 25px rgba(0, 168, 255, 0.6);
+    }
+
+    /* SE AGREGÓ: Contra-rotación de iconos acoplada a los mismos 2.2s */
+    .item-node img { width: 50px; transition: transform 2.2s cubic-bezier(0.15, 0.85, 0.15, 1); }
+
+    /* Posiciones distribuidas uniformemente para 5 tecnologías (72 grados de separación) */
+    .n1 { transform: rotate(0deg) translate(250px) rotate(0deg); }
+    .n2 { transform: rotate(72deg) translate(250px) rotate(-72deg); }
+    .n3 { transform: rotate(144deg) translate(250px) rotate(-144deg); }
+    .n4 { transform: rotate(216deg) translate(250px) rotate(-216deg); }
+    .n5 { transform: rotate(288deg) translate(250px) rotate(-288deg); }
+
+    /* BOTONES */
+    .nav-buttons {
+        position: absolute;
+        bottom: 8%;
+        left: 10%;
+        z-index: 5000;
+    }
+
+    .nav-btn {
+        background: rgba(0, 53, 102, 0.6);
+        border: 2px solid #00a8ff;
+        color: #fff;
+        padding: 15px 25px;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-right: 15px;
+        transition: 0.4s;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    .nav-btn:hover { background: #00a8ff; color: #fff; box-shadow: 0 0 20px #00a8ff; }
+
+    /* Indicador visual de Scroll */
+    .scroll-indicator {
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        color: rgba(255, 255, 255, 0.4);
+        font-family: sans-serif;
+        font-size: 0.85rem;
+        letter-spacing: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        z-index: 5000;
+        text-transform: uppercase;
+    }
+    .scroll-mouse {
+        width: 20px;
+        height: 35px;
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        border-radius: 10px;
+        position: relative;
+    }
+    .scroll-wheel {
+        width: 4px;
+        height: 8px;
+        background-color: #00a8ff;
+        border-radius: 2px;
+        position: absolute;
+        top: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: scrollAnim 2s infinite;
+    }
+    @keyframes scrollAnim {
+        0% { opacity: 1; transform: translate(-50%, 0); }
+        100% { opacity: 0; transform: translate(-50%, 15px); }
+    }
+</style>
+
+<div class="parallax-scene" id="scene">
+    <div id="bg-layers-container"></div>
+
+    <div class="info-panel" id="text-layer">
+        <h1 id="title" class="info-title">JAVA</h1>
+        <p id="desc" style="color: #00b4d8; font-size: 1.8rem; font-weight: 300; transition: color 0.4s, opacity 0.4s;">Arquitecturas de Software Inteligentes</p>
+        <br>
+        <a id="wa-link" href="https://wa.me/525544641797?text=Hola%20SysCati" target="_blank" class="nav-btn" style="display:inline-block; text-decoration:none; background: #25d366; border:none;">
+            Me interesa WhatsApp
+        </a>
+    </div>
+
+    <div class="carousel-wrapper" id="circle-layer">
+        <div class="carousel-orbit" id="orbit">
+            <div class="item-node n1"><img src="https://cdn-icons-png.flaticon.com/512/226/226770.png" alt="Java"></div>
+            <div class="item-node n2"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python"></div>
+            <div class="item-node n3"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968331.png" alt="Oracle"></div>
+            <div class="item-node n4"><img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel"></div>
+            <div class="item-node n5"><img src="https://cdn-icons-png.flaticon.com/512/2092/2092663.png" alt="Ciberseguridad"></div>
+        </div>
+    </div>
+
+    <div class="nav-buttons">
+        <button class="nav-btn" onclick="rotateCarousel(1)">← Anterior</button>
+        <button class="nav-btn" onclick="rotateCarousel(-1)">Siguiente →</button>
+    </div>
+
+    <div class="scroll-indicator">
+        <span>Gira despacio</span>
+        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    </div>
+</div>
+
+<script>
+    // 1. CONFIGURACIÓN DE IMÁGENES DE FONDO Y CONTENIDOS
+    const data = [
+        { 
+            t: "JAVA", 
+            d: "Arquitecturas de Software Inteligentes", 
+            bg: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070" 
+        },
+        { 
+            t: "PYTHON", 
+            d: "Data Science, Scripts e Inteligencia Artificial", 
+            bg: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070" 
+        },
+        { 
+            t: "ORACLE", 
+            d: "Gestión Avanzada y Optimización de Bases de Datos", 
+            bg: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=2021" 
+        },
+        { 
+            t: "EXCEL", 
+            d: "Análisis de Datos, Reportes Financieros y Macros", 
+            bg: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070" 
+        },
+        { 
+            t: "CIBERSEGURIDAD", 
+            d: "Protección de Redes, Pentesting y Auditorías", 
+            bg: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070" 
+        }
+    ];
+
+    // Generar capas de fondo de forma dinámica
+    const bgContainer = document.getElementById('bg-layers-container');
+    data.forEach((item, index) => {
+        const layer = document.createElement('div');
+        layer.className = `bg-layer${index === 0 ? ' active' : ''}`;
+        layer.style.backgroundImage = `url('${item.bg}')`;
+        bgContainer.appendChild(layer);
+    });
+
+    let mouseX = 0, mouseY = 0;
+    let scrollVelocityY = 0;
+    let scrollTimeout = null;
+
+    // 2. LÓGICA DE PARALLAX ATENUADA
+    const scene = document.getElementById('scene');
+    const textLayer = document.getElementById('text-layer');
+    const circleLayer = document.getElementById('circle-layer');
+
+    function updateParallaxPositions() {
+        const baseOffsetX = mouseX * 0.8;
+        const baseOffsetY = (mouseY * 0.8) + (scrollVelocityY * 0.15); // Se redujo la fuerza del impacto de scroll
+
+        const activeBgs = document.querySelectorAll('.bg-layer');
+        activeBgs.forEach(bg => {
+            bg.style.transform = `translate(${-baseOffsetX * 0.4}px, ${-(mouseY * 0.8) - (scrollVelocityY * 0.05)}px) scale(1.02)`;
+        });
+        
+        textLayer.style.transform = `translate(${baseOffsetX}px, ${baseOffsetY}px)`;
+        circleLayer.style.transform = `translate(${baseOffsetX * 1.2}px, ${baseOffsetY * 1.2}px) rotateY(${mouseX * 0.5}deg)`;
+        
+        scrollVelocityY *= 0.95; // Fricción ligeramente aumentada para frenar más suave
+        
+        if (Math.abs(scrollVelocityY) > 0.05 || mouseX !== 0) {
+            requestAnimationFrame(updateParallaxPositions);
+        }
+    }
+
+    scene.addEventListener('mousemove', (e) => {
+        mouseX = (e.clientX - window.innerWidth / 2) / 60;
+        mouseY = (e.clientY - window.innerHeight / 2) / 60;
+        requestAnimationFrame(updateParallaxPositions);
+    });
+
+    // 3. CAPTURA DE SCROLL CON TEMPORIZADOR PACIENTE
+    let isScrollBlocked = false;
+
+    window.addEventListener('wheel', (e) => {
+        scrollVelocityY += e.deltaY * 0.08; // Impacto visual de inercia más sutil
+        requestAnimationFrame(updateParallaxPositions);
+
+        const orbitContainer = document.getElementById('orbit');
+        orbitContainer.style.transform += ` scale(0.985)`; // Deformación menos brusca
+
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+            const currentRot = currentRotation;
+            orbitContainer.style.transform = `rotate(${currentRot}deg) scale(1)`;
+        }, 200);
+
+        // Control estricto anti-repetición
+        if (isScrollBlocked) return;
+
+        if (e.deltaY > 20) {
+            rotateCarousel(-1);
+            triggerScrollLock();
+        } else if (e.deltaY < -20) {
+            rotateCarousel(1);
+            triggerScrollLock();
+        }
+    });
+
+    function triggerScrollLock() {
+        isScrollBlocked = true;
+        // SE MODIFICÓ: Bloqueo extendido a 1500ms (1.5 segundos) para obligar a un ritmo lento y elegante
+        setTimeout(() => { isScrollBlocked = false; }, 1500); 
+    }
+
+    // 4. LÓGICA DEL CARRUSEL EN CADENCIA LENTA
+    const orbit = document.getElementById('orbit');
+    const nodesImg = document.querySelectorAll('.item-node img');
+    const nodes = document.querySelectorAll('.item-node');
+    let currentRotation = 0;
+    let currentIndex = 0;
+    const totalItems = data.length;
+    const angleStep = 360 / totalItems; 
+
+    function updateActiveNodeClass(index) {
+        nodes.forEach((node, i) => {
+            if (i === index) {
+                node.classList.add('active-node');
+            } else {
+                node.classList.remove('active-node');
+            }
+        });
+    }
+
+    function rotateCarousel(dir) {
+        currentRotation += (dir * angleStep);
+        currentIndex = (currentIndex - dir + totalItems) % totalItems;
+
+        orbit.style.transform = `rotate(${currentRotation}deg) scale(1}`;
+
+        nodesImg.forEach((img) => {
+            img.style.transform = `rotate(${-currentRotation}deg)`;
+        });
+
+        // Transición de opacidad de textos coordinada de forma pausada
+        const titleEl = document.getElementById('title');
+        const descEl = document.getElementById('desc');
+        
+        titleEl.style.transform = 'translateY(-6px)';
+        titleEl.style.opacity = '0';
+        descEl.style.opacity = '0';
+
+        setTimeout(() => {
+            titleEl.innerText = data[currentIndex].t;
+            descEl.innerText = data[currentIndex].d;
+            titleEl.style.transform = 'translateY(0)';
+            titleEl.style.opacity = '1';
+            descEl.style.opacity = '1';
+        }, 350); // Se retrasó un poco la aparición para encajar con el ritmo general
+        
+        const bgLayers = document.querySelectorAll('.bg-layer');
+        bgLayers.forEach((layer, index) => {
+            if (index === currentIndex) {
+                layer.classList.add('active');
+            } else {
+                layer.classList.remove('active');
+            }
+        });
+
+        updateActiveNodeClass(currentIndex);
+
+        const msg = encodeURIComponent(`Hola SysCati, informes de ${data[currentIndex].t}`);
+        document.getElementById('wa-link').href = `https://wa.me/525544641797?text=${msg}`;
+    }
+
+    updateActiveNodeClass(0);
+</script>
+       
+       
+        
+        </section>
+<!----------------------------------------------------- /Seccion  slider----------------------------------------------------------->
+
+<!--------------------------------------------------------- Catalogo---------------------------------------------------------------->
+        <section class="bg-light py-5" id="pricing">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Catálogo de Cursos (Promoción -50% BECA)</h2>
+                    <p class="text-muted">Adquiere una beca por ser de los 5 primeros en inscribirse y pagar cualquiera de nuestros cursos (Desarrolla mas agil con nosotros).</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card h-100 pricing-card p-3">
+                            <div class="card-body text-center">
+                                <h5 class="fw-bold">Java desde Cero</h5>
+                                <h2 class="text-primary fw-bold">$899.99</h2>
+								<h6 class="text-primary fw-bold"><i>Solicita tu beca del 50%</i></h6>
+                                <ul class="list-unstyled my-4 text-start">
+								    <li><i class="bi bi-check2-circle text-success"></i> Materiales previos </li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> 15 Horas de Curso</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> Constancia curricular</li>
+									<li><i class="bi bi-check2-circle text-success"></i> Garantia de aprendizaje</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> Materiales</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> Instructor certificado</li>
+									<li><i class="bi bi-check2-circle text-success"></i> Los mejores tips y Consejos</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> 25 Mejores Manuales</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> 30 Ejercicios</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> Proyecto Profesional</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary w-100 btn-action">Incribirse beca</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 pricing-card p-3 border-primary shadow">
+                            <div class="card-body text-center">
+                                <h5 class="fw-bold">Excel Empresarial</h5>
+                                <h2 class="text-primary fw-bold">$699.99</h2>
+								<h6 class="text-primary fw-bold"><i>Solicita tu beca del 50%</i></h6>
+                                <ul class="list-unstyled my-4 text-start">
+								    <li><i class="bi bi-check2-circle text-success"></i> Materiales previos </li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> 15 Horas de Curso</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> Constancia curricular</li>
+									<li><i class="bi bi-check2-circle text-success"></i> Garantia de aprendizaje</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> Materiales con IA</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> Instructor certificado</li>
+									<li><i class="bi bi-check2-circle text-success"></i> Los mejores tips y Consejos</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> 10 Mejores Manuales</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> 30 Ejercicios</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> Proyecto Profesional</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary w-100 btn-action">Incribirse</a>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-md-3">
+                        <div class="card h-100 pricing-card p-3">
+                            <div class="card-body text-center">
+                                <h5 class="fw-bold">Python desde Cero</h5>
+                                <h2 class="text-primary fw-bold">$899.99</h2>
+								<h6 class="text-primary fw-bold"><i>Solicita tu beca del 50%</i></h6>
+                                <ul class="list-unstyled my-4 text-start">
+								    <li><i class="bi bi-check2-circle text-success"></i> Materiales previos </li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> 15 Horas de Curso</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> Constancia curricular</li>
+									<li><i class="bi bi-check2-circle text-success"></i> Garantia de aprendizaje</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> Materiales</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> Instructor certificado</li>
+									<li><i class="bi bi-check2-circle text-success"></i> Los mejores tips y Consejos</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> 25 Mejores Manuales</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> 30 Ejercicios</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> Proyecto Profesional</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary w-100 btn-action">Incribirse beca</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 pricing-card p-3 border-primary shadow">
+                            <div class="card-body text-center">
+                                <h5 class="fw-bold">Ciberseguridad I</h5>
+                                <h2 class="text-primary fw-bold">$699.99</h2>
+								<h6 class="text-primary fw-bold"><i>Solicita tu beca del 50%</i></h6>
+                                <ul class="list-unstyled my-4 text-start">
+								    <li><i class="bi bi-check2-circle text-success"></i> Materiales previos </li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> 15 Horas de Curso</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> Constancia curricular</li>
+									<li><i class="bi bi-check2-circle text-success"></i> Garantia de aprendizaje</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> Materiales con IA</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> Instructor certificado</li>
+									<li><i class="bi bi-check2-circle text-success"></i> Los mejores tips y Consejos</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> 10 Mejores Manuales</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> 30 Ejercicios</li>
+                                    <li><i class="bi bi-check2-circle text-success"></i> Proyecto Profesional</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary w-100 btn-action">Incribirse</a>
+                            </div>
+                        </div>
+                    </div>
+					
+                </div>
+				<div class="text-center mb-5">
+                    <h2 class="fw-bold"> Y Hay mas... ¿Quien te da mas por tan poco? Con Excelente calidad  </h2>
+                    <p class="text-muted">Adquiere una beca por ser de los 5 primeros en inscribirse y pagar cualquiera de nuestros cursos (Desarrolla mas agil con nosotros).</p>
+                </div>
+			</div>
+          
+        </section> 
+<!--------------------------------------------------------- /Catalogo---------------------------------------------------------------->
+
+<!--------------------------------------------------------- Comunidad---------------------------------------------------------------->
+
+  <section class="py-5" id="features">
+  <style>
+ 
+    /* 1. SECCIÓN PRINCIPAL HUB DE CONTENIDO */
+    .dev-hub-section {
+        
+		    overflow-x: hidden;
+            padding: 60px 20px;
+            font-family:  'Poppins', sans-serif;
+            background-color: var(--blue-bg);
+            /* Imagen de fondo principal */
+            background-image: linear-gradient(rgba(0, 18, 51, 0.92), rgba(0, 8, 20, 0.95)),
+                              url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #000000;
+			display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+            line-height: 1.6;		
+    }
+
+    .hub-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 10px;
+        text-shadow: 0 0 15px rgba(0, 168, 255, 0.4);
+    }
+
+    .hub-subtitle {
+        color: #00b4d8;
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+        font-weight: 300;
+    }
+
+    /* 2. MENÚ DE PESTAÑAS (TABS) */
+    .hub-tabs {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 40px;
+        background: rgba(255, 255, 255, 0.03);
+        padding: 8px;
+        border-radius: 50px;
+        border: 1px solid rgba(0, 157, 255, 0.2);
+    }
+
+    .tab-btn {
+        background: transparent;
+        border: none;
+        color: rgba(255, 255, 255, 0.6);
+        padding: 12px 28px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 40px;
+        transition: all 0.5s cubic-bezier(0.15, 0.85, 0.15, 1);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .tab-btn:hover {
+        color: #ffffff;
+        background: rgba(0, 168, 255, 0.1);
+    }
+
+    .tab-btn.active-tab {
+        color: #ffffff;
+        background: #00a8ff;
+        box-shadow: 0 0 20px rgba(0, 168, 255, 0.5);
+    }
+
+    /* 3. CONTENEDOR DE CONTENIDO CON ANIMACIÓN FADE-IN */
+    .hub-content-display {
+        width: 100%;
+        max-width: 1200px;
+        display: none; /* Se controla vía JS */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .hub-content-display.active-content {
+        display: grid;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* 4. TARJETAS (CARDS) ESTILO CRISTAL */
+    .hub-card {
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(0, 157, 255, 0.2);
+        border-radius: 16px;
+        padding: 30px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* Transición lenta alineada al carrusel */
+        transition: transform 0.6s cubic-bezier(0.15, 0.85, 0.15, 1), 
+                    border-color 0.6s ease, 
+                    box-shadow 0.6s ease;
+    }
+
+    .hub-card:hover {
+        transform: translateY(-10px);
+        border-color: #00a8ff;
+        box-shadow: 0 15px 35px rgba(0, 168, 255, 0.25);
+    }
+
+    /* Efecto de brillo sutil en el fondo de la tarjeta */
+    .hub-card::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(0,168,255,0.05) 0%, transparent 70%);
+        pointer-events: none;
+        transition: transform 0.8s ease;
+    }
+
+    .hub-card:hover::before {
+        transform: translate(10%, 10%);
+    }
+
+    .card-icon {
+        font-size: 2rem;
+        color: #00a8ff;
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 12px;
+        color: #ffffff;
+    }
+
+    .card-text {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .card-tag {
+        align-self: flex-start;
+        background: rgba(0, 180, 216, 0.15);
+        color: #00b4d8;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    /* 5. ESTILOS ESPECÍFICOS PARA MEMES (Imágenes) */
+    .meme-wrapper {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .meme-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        transition: transform 0.8s cubic-bezier(0.15, 0.85, 0.15, 1);
+    }
+
+    .hub-card:hover .meme-img {
+        transform: scale(1.05);
+    }
+
+    .meme-footer {
+        padding: 20px 25px;
+    }
+
+    /* 6. ESTILOS ESPECÍFICOS PARA VIDEOS (Iframe adaptativo) */
+    .video-wrapper {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .video-container {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%; /* Relación de aspecto 16:9 */
+        background: #000;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+</style>
+
+<div class="dev-hub-section" id="features">
+    <h2 class="hub-title">SYSCATI->IA  Hub</h2>
+    <p class="hub-subtitle">Tips, Consejos, Recursos, Comunidad para Desarrolladores </p>
+
+    <div class="hub-tabs">
+        <button class="tab-btn active-tab" onclick="switchTab(event, 'tips')"> Tips</button>
+        <button class="tab-btn" onclick="switchTab(event, 'practices')"> Buenas Prácticas</button>
+        <button class="tab-btn" onclick="switchTab(event, 'memes')"> Memes</button>
+        <button class="tab-btn" onclick="switchTab(event, 'videos')"> Videos</button>
+    </div>
+
+    <div id="tips" class="hub-content-display active-content">
+        <div class="hub-card">
+            <div>
+                <div class="card-icon"></div>
+                <h3 class="card-title">Domina los Atajos del IDE</h3>
+                <p class="card-text">Aprender a moverte sin usar el mouse en VS Code, IntelliJ o Eclipse puede ahorrarte hasta un 20% de tiempo en la escritura de código diaria.</p>
+            </div>
+            <span class="card-tag">Productividad</span>
+        </div>
+        <div class="hub-card">
+            <div>
+                <div class="card-icon"></div>
+                <h3 class="card-title">El poder del Debugger</h3>
+                <p class="card-text">Deja de usar "print" o "console.log" de forma masiva. Los breakpoints te permiten congelar el tiempo y auditar variables con precisión de cirujano.</p>
+            </div>
+            <span class="card-tag">Debugging</span>
+        </div>
+        <div class="hub-card">
+            <div>
+                <div class="card-icon"></div>
+                <h3 class="card-title">La regla de los 15 minutos</h3>
+                <p class="card-text">Si estás atrapado en un bug, dedícale 15 minutos a documentar el problema e intentar solucionarlo solo. Si no lo logras, pide ayuda. No te estanques.</p>
+            </div>
+            <span class="card-tag">Mindset</span>
+        </div>
+    </div>
+
+    <div id="practices" class="hub-content-display">
+        <div class="hub-card">
+            <div>
+                <div class="card-icon"></div>
+                <h3 class="card-title">Código Limpio (Clean Code)</h3>
+                <p class="card-text">Nombra tus variables y funciones de forma descriptiva. Un buen código debe leerse de manera tan fluida como un libro, minimizando el exceso de comentarios.</p>
+            </div>
+            <span class="card-tag">SOLID</span>
+        </div>
+        <div class="hub-card">
+            <div>
+                <div class="card-icon"></div>
+                <h3 class="card-title">Commits Atómicos en Git</h3>
+                <p class="card-text">Realiza commits pequeños que solucionen o agreguen una sola cosa a la vez. Facilitará las revisiones de código y el rastreo de errores en producción.</p>
+            </div>
+            <span class="card-tag">Versionado</span>
+        </div>
+        <div class="hub-card">
+            <div>
+                <div class="card-icon"></div>
+                <h3 class="card-title">No confíes en el usuario</h3>
+                <p class="card-text">Valida y sanitiza cada entrada de datos que reciba tu aplicación, tanto en el frontend como en el backend. Previene inyecciones SQL y ataques XSS.</p>
+            </div>
+            <span class="card-tag">Seguridad</span>
+        </div>
+    </div>
+
+    <div id="memes" class="hub-content-display">
+        <div class="hub-card meme-wrapper">
+            <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=600" alt="Meme Programación" class="meme-img">
+            <div class="meme-footer">
+                <h3 class="card-title">Cuando compila a la primera</h3>
+                <p class="card-text">Sospechas inmediatamente de que algo anda muy mal en el entorno de desarrollo.</p>
+                <span class="card-tag">Humor Dev</span>
+            </div>
+        </div>
+        <div class="hub-card meme-wrapper">
+            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=600" alt="Meme Programación 2" class="meme-img">
+            <div class="meme-footer">
+                <h3 class="card-title">Viernes de Deploy</h3>
+                <p class="card-text">Subiendo cambios críticos a producción a las 4:59 PM sin miedo al éxito.</p>
+                <span class="card-tag">Realidad</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="videos" class="hub-content-display">
+        <div class="hub-card video-wrapper">
+        <center>    
+             <br><br>
+    <video width="600" height="240" autoplay loop controls >
+  <source src="videos/Vídeo_presentacion.mp4" type="video/mp4">
+  <source src="video.ogg" type="video/ogg">
+  El navegador no soporta la etiqueta video.
+</video>	
+		
+         </center>   
+SYSCATIProductos_y_servicios            
+                <h3 class="card-title">Introducción a la Ciberseguridad</h3>
+                <p class="card-text">Conceptos esenciales para blindar tus aplicaciones web paso a paso.</p>
+                <span class="card-tag">Tutorial</span>
+            
+        </div>
+        <div class="hub-card video-wrapper">
+           <center>    
+             <br><br>
+    <video width="600" height="240" autoplay loop controls >
+  <source src="videos/SYSCATIProductos_y_servicios.mp4" type="video/mp4">
+  <source src="video.ogg" type="video/ogg">
+  El navegador no soporta la etiqueta video.
+</video>	
+		
+         </center>            
+			<h3 class="card-title">El futuro de Python y la IA</h3>
+                <p class="card-text">Análisis de cómo la automatización está transformando el desarrollo de software.</p>
+                <span class="card-tag">Análisis</span>
+                    </div>
+    </div>
+</div>  <!--Seccion principal -->
+
+<script>
+    function switchTab(event, tabId) {
+        // 1. Quitar la clase activa de todos los botones
+        const tabs = document.querySelectorAll('.tab-btn');
+        tabs.forEach(tab => tab.classList.remove('active-tab'));
+
+        // 2. Ocultar todos los contenedores de contenido mediante transiciones suaves
+        const contents = document.querySelectorAll('.hub-content-display');
+        contents.forEach(content => {
+            content.classList.remove('active-content');
+        });
+
+        // 3. Activar la pestaña cliqueada
+        event.currentTarget.classList.add('active-tab');
+
+        // 4. Mostrar el contenido seleccionado con un pequeño retraso para asegurar el efecto fade
+        const targetContent = document.getElementById(tabId);
+        // Pequeño timeout para reiniciar la animación CSS de entrada
+        setTimeout(() => {
+            targetContent.classList.add('active-content');
+        }, 50);
+    }
+</script>
+  
+ </section>
+<!--------------------------------------------------------- /Comunidad----------------------------------------------------------------> 
+
+
+<!--------------------------------------------------------- Contacto---------------------------------------------------------------->
+        <section class="py-5" id="contact">
+            <div class="container py-5">
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-8">
+                        <h2 class="fw-bold">¿Listo para comenzar en SYSCATI->IA?</h2>
+                        <p class="mb-4">WhatsApp: 5576258703 | Especialistas con 20 años de experiencia.</p>
+                        <div class="p-4 bg-white shadow rounded-4">
+                            <div class="glass-card p-5 shadow-lg" data-aos="zoom-in">
+                                <h3 class="text-center mb-4">Solicitud de Informes Directa</h3>
+                                <form id="formWhatsApp">
+                                    <div class="mb-3">
+                                        <input type="text" id="ws_nombre" class="form-control" placeholder="Tu Nombre" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <select id="ws_curso" class="form-select" required>
+                                            <option value="">Selecciona el curso...</option>
+                                            <option value="Java Fullstack">Java Fullstack</option>
+                                            <option value="Android Expert">Android Expert</option>
+                                            <option value="Soporte Técnico">Soporte Técnico</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea id="ws_mensaje" class="form-control" placeholder="¿En qué podemos ayudarte?" rows="3"></textarea>
+                                    </div>
+                                    <button type="button" onclick="enviarInformesWS()" class="btn btn-success w-100 btn-lg shadow">
+                                        Enviar a WhatsApp SYSCATI->IA<i class="bi bi-whatsapp ms-2"></i>
+                                    </button>
+                                </form>
+                            </div>
+
+                            <script>
+                                function enviarInformesWS() {
+                                    // 1. Capturamos los datos
+                                    const nombre = document.getElementById('ws_nombre').value;
+                                    const curso = document.getElementById('ws_curso').value;
+                                    const mensaje = document.getElementById('ws_mensaje').value;
+                                    const telefono = "525576258703"; // <-- TU NÚMERO AQUÍ
+
+                                    if (!nombre || !curso) {
+                                        alert("Por favor, llena los campos básicos.");
+                                        return;
+                                    }
+
+                                    // 2. Formateamos el mensaje para WhatsApp
+                                    const texto = `*NUEVO INFORME SYSCATI*%0A` +
+                                            `*Nombre:* ${nombre}%0A` +
+                                            `*Curso:* ${curso}%0A` +
+                                            `*Mensaje:* ${mensaje}`;
+
+                                    // 3. Abrimos la ventana
+                                    window.open(`https://wa.me/${telefono}?text=${texto}`, '_blank');
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+<!--------------------------------------------------------- /Contacto---------------------------------------------------------------->
+        <footer class="footer mt-5">
+            <div class="container text-center">
+                <p class="mb-0">Copyright © 2026 SYSCATI->IA. Todos los derechos reservados.</p>
+                <div class="mt-3">
+                    <a href="#" class="text-white-50 me-3 text-decoration-none">Privacidad</a>
+                    <a href="#" class="text-white-50 text-decoration-none">Términos</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            // Inicializar AOS
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
+
+            // Forzar el autoplay del video (algunos navegadores lo bloquean)
+            window.addEventListener('load', function () {
+                var video = document.getElementById('bg-video');
+                video.play().catch(function (error) {
+                    console.log("El video no pudo reproducirse automáticamente.");
+                });
+            });
+        </script>
+        <style>
+            .whatsapp-float {
+                position: fixed;
+                width: 60px;
+                height: 60px;
+                bottom: 40px;
+                right: 40px;
+                background-color: #25d366;
+                color: #FFF;
+                border-radius: 50px;
+                text-align: center;
+                font-size: 30px;
+                box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+                z-index: 1000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
+
+            .whatsapp-float:hover {
+                text-decoration: none;
+                color: #FFF;
+                background-color: #128C7E;
+                transform: scale(1.1) rotate(15deg);
+            }
+
+            /* Animación de pulso */
+            .whatsapp-float::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background-color: #25d366;
+                opacity: 0.7;
+                z-index: -1;
+                animation: pulse-green 2s infinite;
+            }
+
+            @keyframes pulse-green {
+                0% {
+                    transform: scale(0.95);
+                    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+                }
+                70% {
+                    transform: scale(1);
+                    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+                }
+                100% {
+                    transform: scale(0.95);
+                    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+                }
+            }
+        </style>
+
+        <a href="https://wa.me/525576258703?text=Hola%20SYSCATI,%20me%20gustaría%20recibir%20información%20sobre%20sus%20cursos." class="whatsapp-float" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+
+    </body>
+</html>
